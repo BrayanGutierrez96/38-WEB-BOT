@@ -18,9 +18,73 @@
     <div class="imagen2">
       <img src="./imagenes/logo.png" width="300px" height="300px" />
     </div>
-    <hr>
-    <iframe width="300"  src="https://www.youtube.com/embed/1Crz1yvkTzQ?si=IdoCwvU_zWQZCrrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <hr>
-    <video src="./videos/video.mp4" width="300px" controls></video>
+    <hr />
+    <iframe
+      width="300"
+      src="https://www.youtube.com/embed/1Crz1yvkTzQ?si=IdoCwvU_zWQZCrrM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <video src="./videos/video.mp4" width="300px"></video>
+    <hr />
+    <br />
+    <table>
+      <tr>
+        <td>columna 1</td>
+        <td>columna 2</td>
+        <td>columna 3</td>
+      </tr>
+      <tr>
+        <td>columna 1</td>
+        <td>columna 2</td>
+        <td>columna 3</td>
+      </tr>
+      <tr class="fila2">
+        <td>columna 1</td>
+        <td>columna 2</td>
+        <td>columna 3</td>
+      </tr>
+      <tr class="filas1">
+        <td>columna 1</td>
+        <td>columna 2</td>
+        <td>columna 3</td>
+      </tr>
+      <tr>
+        <td>columna 1</td>
+        <td>columna 2</td>
+        <td>columna 3</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <form action="datos.php">
+      <input type="text" placeholder="Ingresa tu nombre" size="5px" />
+      <input type="email" placeholder="Ingresa tu email" />
+      <input type="password" placeholder="Ingresa tu contraseña" />
+      <input type="number" placeholder="Ingresa tu edad" />
+      <br />
+      <input type="radio" id="masculino" /><label for="masculino"
+        >masuculino</label
+      >
+      <input type="radio" id="femenino" /><label for="femenino">femenino</label>
+      <input type="radio" id="otro" checked /><label for="otro">otro</label>
+      <br />
+      <input type="checkbox" checked id="casado" /><label for="casado"
+        >eres casado ?</label
+      >
+      <br />
+      <select>
+        <option value="ninguno">ninguno</option>
+        <option value="colombia">Colombia</option>
+        <option value="Chile">Chile</option>
+      </select>
+      <br>
+      <input type="button" value="Enviar">
+      <input type="submit" value="Enviar">
+    </form>
   </body>
 </html>
