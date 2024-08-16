@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    border: 1px solid black;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+.cajas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 60px;
+}
+#caja1{
+    order : 3;
+}
+#caja2{
+    order : 2;
+}
+#caja3{
+    order : 1;
+}
