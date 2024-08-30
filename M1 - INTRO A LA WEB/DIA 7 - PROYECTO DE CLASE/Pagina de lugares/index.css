@@ -9,7 +9,7 @@ body{
     font-family:"Nunito Sans";
 }
 main{
-    padding: 80px;
+    padding: 50px;
     display: grid;
     gap: 50px;
     z-index: 1000;

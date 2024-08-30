@@ -44,8 +44,12 @@
 }
 
 .img-card{
+    background: url("https://www.shutterstock.com/image-vector/image-not-found-grayscale-photo-260nw-1737334631.jpg") no-repeat;
+    background-size: cover;
+    background-position-y:40% ;
     width: 100%;
     max-height: 200px;
+    min-height: 200px;
     border-top-left-radius: 10px ;
     border-top-right-radius:10px ;
 }
@@ -60,9 +64,46 @@
 .descripcion-card{
     min-height: 130px;
     font-size: 0.7em;
+    max-height: 150px;
+    overflow-y: hidden;
+    min-height: 150px;
+    overflow-y:hidden;
 }
 
+.btns-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 20px ;
+}
 
+.btn{
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(224, 224, 224, 0.678);
+    border-radius: 7px;
+    cursor: pointer;
+    user-select: none;
+    font-weight:600 ;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+.btn-visit{
+    background-color: #42AA85;
+    color: white;
+    
+}
+.btn-favorites{
+    border: 1px solid #42AA85; ;
+    background-color: white;
+    color: #42AA85;
+}
 
 @media(min-width:800px){
     .cards{
