@@ -1,0 +1,77 @@
+.visit-places{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.titulo-places{
+    border-bottom: 2px solid rgb(35, 83, 35);
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
+.subtitulos-places{
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    font-size: .9em;
+}
+
+
+.texto-places{
+    color: rgb(41, 41, 41);
+}
+
+.favorites{
+    color: rgb(145, 142, 142);
+}
+
+.cards{
+    width: 100%;
+    display: grid;
+    gap: 100px;
+}
+
+.card-contenedor{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border: 1px solid rgba(199, 198, 198, 0.808);
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px 3px rgba(97, 97, 97, 0.514);
+}
+
+.img-card{
+    width: 100%;
+    max-height: 200px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius:10px ;
+}
+
+.contenido-card{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.descripcion-card{
+    min-height: 130px;
+    font-size: 0.7em;
+}
+
+
+
+@media(min-width:800px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:1240px){
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
