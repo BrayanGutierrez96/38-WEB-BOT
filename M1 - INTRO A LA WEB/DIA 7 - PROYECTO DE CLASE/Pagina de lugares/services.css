@@ -11,30 +11,29 @@
   padding-bottom: 5px;
 }
 
+/* Servicios 1 */
 .servicios__card-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
 }
 
 .card-1__img {
-  background: url("https://s3-alpha-sig.figma.com/img/f211/7f42/77f97883c8eda46573ded4f627a7fbd9?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JAcfW31ivbVCpCEfjpk5bs~NTjRxjiOBRThbnb1MOVOALol3wGexr5OO5Ii2IFae~b3zdnbv6Nr6RJns5H0FKMLCuHcePxTrkyTRhWU3NKRJd76v3sPqW8103jpNObsBnRxsJhvHvtvQIZ8v9wy1vDKYBmMPDeob5q3iZrWDSUWt0~HNju4idyUkNLmVsQ~VrQkot-3FgO5ZMTi~ch~elUwjj76LtFRzcN-sgjFxAuSofeWm~I7Q4u3e-ZjbjN55cYJFXQiJygfjDmDt0vCNxZ1U2yreJIqu2Ai1BQ0uHKgs7qp3y~bmISw2wkGoU84SwCJFLEp65xQXjwkiJ2vp~A__  ")
-    no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 100%;
-  background-position-x: center;
-  background-position-y: 100%;
+  max-height: 100%;
   border-radius: 10px;
-  z-index: -10;
+  z-index: -100;
+}
+.img-card-1 {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .card-1__texto {
   width: 90%;
   margin-top: -60px;
-  z-index: 100;
+  z-index: 1000;
   background-color: white;
   border: 1px solid rgb(255, 255, 255);
   display: flex;
@@ -43,41 +42,161 @@
   align-items: center;
   gap: 20px;
   padding: 25px;
+  box-shadow: 15px 10px 20px 7px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 500px) {
+.cards__btn {
+  padding: 5px;
+  height: 40px;
+  width: 160px;
+  border: 1px solid grey;
+  background-color: white;
+  color: #082419;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.cards__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Servicios 2 */
+
+.servicios__card-2 {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-2__texto {
+  min-height: 400px;
+  max-height:60;
+  width: 90%;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ padding: 25px;
+ box-shadow: 15px 10px 20px 7px rgba(0, 0, 0, 0.2);
+}
+
+.card-2__paragraph{
+  overflow: hidden;
+}
+
+.img__card2 {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: -60px;
+  z-index: -100;
+  height: 350px;
+}
+.img-card-2{
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Estilos para pantallas minimas de 800px */
+@media (min-width: 800px) {
   .card-1__img {
-    background-position-y: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-card-1 {
+    width: 90%;
+  }
+  .card-1__texto {
+    width: 80%;
+  }
+  .img__card2 {
+    display: flex;
+    justify-content: center;
+  }
+  .img-card-2 {
+    width: 90%;
+  }
+  .card-2__texto {
+    width: 80%;
   }
 }
 
+/* Estilos para pantallas minimas de 1200px */
 @media (min-width: 1200px) {
   .servicios__card-1 {
     flex-direction: row;
     height: 400px;
   }
   .card-1__img {
+    margin-top: 0;
     position: relative;
     height: 100%;
-    background-position-y: 80%;
   }
   .card-1__texto {
     width: 100%;
     text-align: left;
     align-items: start;
     padding: 50px;
-    margin-top: 50px;
-    margin-left: -50px;
-    max-height: 400px;
+    margin-top: 45px;
+    margin-left: -80px;
+    max-height: 300px;
+    box-shadow: none;
   }
-  .card-1__title{
+  .img-card-1 {
+    height: 100%;
+  }
+  .card-1__title {
     font-weight: 800;
   }
-  .card-1__paragraph{
-    font-size: .8em;
+  .card-1__paragraph {
+    font-size: 0.8em;
   }
-
+  .card-1__btn {
+    margin-bottom: 0;
+  }
+  .servicios__card-2 {
+    flex-direction: row;
+    height: 400px;
+    margin-top: 50px;
+    padding-top:0 ;
+  }
+  
+  .card-2__texto {
+    width: 100%;
+    text-align: left;
+    align-items: start;
+    padding: 25px 50px 0px 50px;
+    margin-right: -80px;
+    margin-top: 45px;
+    box-shadow:none;
+    min-height: 100px;
+    max-height: 300px;
+  }
+  .img__card2{
+    height: 100%;
+    margin-top: 0;
+    position: relative;
+  }
+  .img-card-2 {
+    width: 100%;
+    height: 100%;
+  }
+  .card-2__title {
+    font-weight: 800;
+  }
+  .card-2__paragraph {
+    font-size: 0.8em;
+  }
+  .card-2__btn {
+    margin-bottom: 0;
+  }
 }
 
-.card-2__img {
-  width: 200px;
-}
