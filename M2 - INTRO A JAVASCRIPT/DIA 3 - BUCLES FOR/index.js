@@ -7,13 +7,13 @@ const frutas = ["Manzana", "uva", "pera"];
 let indice = 0;
 
 for (indice; indice < 3; indice = indice + 1) {
-  console.log("Futa: " + frutas[indice]);
+  console.log("Fruta: " + frutas[indice]);
 }
 
 //Ejemplo 2
 let numeros = [3, 7, 5];
 
-let total = 0;
+    let total = 0;
 for (let i = 0; i < numeros.length; i++) {
   total = total + numeros[i];
 }
@@ -22,7 +22,7 @@ console.log("El total es: " + total);
 // Ejercicio 1: Números pares del 1 al 20
 // Escribe un programa que imprima todos los números pares entre 1 y 20 utilizando un bucle for y una condicional.
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 20; i = i + 1) {
   if (i % 2 === 0) {
     console.log("Numero par: " + i);
   }
@@ -53,22 +53,23 @@ for(let i = 0; i < arreglo.length; i++){
 console.log(contador+" numeros son mayores que 10");
 
 
-//Arreglo:
+// Arreglo:
 // let listaTareas = ["Comprar Desayuno", "Ir a trabajar", "Estar en clases"]
 
-//Objeto:
-// const perfil = {
-//     email:"jonh@example.com",
-//     arreglo:[{nombre:"Jane"},"asdfas","sadff"],
-//     objeto:{
-//         nombre2:"sadfas",
-//         asdfas:"Asdfasd",
-//         asdfasd:"asdfas"
-//     },
-//     nombre:"john",
-//     apellido:"Doe",
-//     edad:22,
-// }
+const DB = [{},{},{}]
+Objeto:
+const perfil = {
+    email:"jonh@example.com",
+    arreglo:[{nombre:"Jane"},"asdfas","sadff"],
+    objeto:{
+        nombre2:"sadfas",
+        asdfas:"Asdfasd",
+        asdfasd:"asdfas"
+    },
+    nombre:"john",
+    apellido:"Doe",
+    edad:22,
+}
 
 //-------INDICE DE UN LIBRO ------------
 
