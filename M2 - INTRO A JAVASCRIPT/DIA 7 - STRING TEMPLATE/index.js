@@ -45,11 +45,12 @@ for (let i = 0; i < datos.length; i++) {
     </div>
     <div class="card__text">
       <p>
-        ${datos[i].desc}
+      ${datos[i].desc}
       </p>
       <button class="card__btn">Agregar a favoritos</button>
     </div>
   </div>`;
+
 }
 //Se sobreescribe la variable "root" que recordemos que es el que me va a renderizar todo mi html
 //con lo que obtuvo el htmlActual
@@ -57,16 +58,22 @@ root.innerHTML = htmlActual;
 
 const btns = document.querySelectorAll(".card__btn");
 
+
 //Primera y mejor manera de capturar el titulo
+// for (let index = 0; index < btns.length; index++) {
+//   btns[index].onclick = function () {
+//     alert(`${datos[index].titulo} agregada a favoritos`);
+//   };
+// }
+// addEventListener("")
+// Segunda manera de capturar el titulo
+const tituloCard = document.querySelectorAll(".card__title");
 for (let index = 0; index < btns.length; index++) {
-  btns[index].onclick = function (evento) {
-    alert(`${datos[index].titulo} agregada a favoritos`);
-    console.log(evento.target);
-  };
+  btns[index].addEventListener("click", function(){
+    mensaje(tituloCard[index].textContent)
+  } );
 }
 
-//Segunda manera de capturar el titulo
-// const tituloCard = document.querySelectorAll(".card__title")
-// for(let index = 0; index < btns.length; index ++ ){
-//     btns[index].onclick = function(){alert(`${tituloCard[index].textContent} agregada a favoritos`);}
-// }
+function mensaje(index){
+  alert(`${index } agregada a favoritos`);
+}
