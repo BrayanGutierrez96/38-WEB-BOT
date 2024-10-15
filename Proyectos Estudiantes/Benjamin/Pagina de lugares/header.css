@@ -1,0 +1,134 @@
+header {
+  background: url("https://img.freepik.com/foto-gratis/amigos-remando-kayak-lago_23-2148683909.jpg?t=st=1728577256~exp=1728580856~hmac=f51006afc5fe319001ace75470a838d507854c2de0e04912325f53be6fadfa46&w=1060")
+    no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: 100%;
+}
+.head {
+  display: grid;
+  padding: 20px;
+  background-color: rgba(28, 48, 27, 0.458);
+  color: white;
+  gap: 5px;
+}
+
+.logo {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 0.7em;
+}
+.titulo {
+    font-family: "Caveat";
+    font-style: italic;
+    word-spacing: 2px;
+  font-weight: 500;
+}
+.contenedor-encabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  font-size: 0.8em;
+  font-weight: bolder;
+  align-items: center;
+}
+.contenedor-encabezado__texto {
+  text-align: center;
+  font-weight: 500;
+}
+.contenedor-encabezado__btn {
+  width: 40%;
+  color: grey;
+  border: 1px solid rgba(0, 0, 0, 0.316);
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 7px;
+  height: 45px;
+  margin: 30px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contenedor-encabezado__btn:hover {
+  background-color: rgb(57, 57, 57);
+  color: white;
+}
+.nav__link {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.link__container {
+  list-style-type: none;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  user-select: none;
+}
+
+.link:hover {
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 640px) {
+  header {
+    background-size: 100%;
+    background-position-y: 77%;
+    background-position-x: 100%;
+  }
+  .head {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logo {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .contenedor-encabezado {
+    height: 300px;
+  }
+  .contenedor-encabezado__btn {
+    height: 50px;
+    margin-bottom: 0;
+  }
+  .link__container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1240px) {
+  header {
+    background-size: 100%;
+    background-position-y: 77%;
+    background-position-x: 100%;
+  }
+  .head {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logo {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .titulo {
+    font-size: 1.1em;
+  }
+  .contenedor-encabezado {
+    height: 200px;
+    margin-top: 20px;
+  }
+  .contenedor-encabezado__btn {
+    height: 30px;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .link__container {
+    padding: 0;
+  }
+}

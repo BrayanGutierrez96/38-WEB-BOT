@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.ModalInfoPais {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* Puedes ajustar el ancho según tus necesidades */
+  max-width: 1096px;
+  padding: 20px;
+  background-color: rgba(238, 13, 13, 0.5);
+  z-index: 10;
+  position:fixed;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta el modal al centro */
+  border-radius: 10px; /* Opcional: redondea los bordes */
+}
+
+.titulo-modal {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacio entre el título y el contenido */
+}
+
+.contenido-modal {
+  display: flex;
+  flex-direction: row; /* Asegura que la imagen y el texto estén en una fila */
+  gap: 20px;
+  width: 100%; /* Asegura que tome todo el ancho */
+  justify-content: center; /* Centra la imagen y el texto horizontalmente */
+  align-items: flex-start; /* Alinea verticalmente */
+}
+
+.img-card-modal {
+  width: 50%; /* Ocupa la mitad del ancho */
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-modal {
+  font-size: 20;
+  width: 50%; /* Ocupa la mitad del ancho */
+  padding: 20px;
+  font-size: 16px;
+}
+#cerrar-modal{
+  cursor: pointer;
+  background: transparent;
+  padding: 5px;
+  border: 1px solid white;
+}

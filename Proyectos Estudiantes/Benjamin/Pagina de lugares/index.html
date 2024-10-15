@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./card.css" />
+    <link rel="stylesheet" href="./services.css" />
+    <link rel="stylesheet" href="Modal.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>TravelSite</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="logo">
+          <h1 class="titulo">TravelSite</h1>
+        </div>
+        <div class="contenedor-encabezado">
+          <h2 class="contenedor-encabezado__texto">
+            Our destination is never a place, but a new way of seeing things
+          </h2>
+          <button class="contenedor-encabezado__btn">Register Now</button>
+        </div>
+        <nav>
+          <ul class="nav__link">
+            <li class="link__container"><a href="" class="link">Home</a></li>
+            <li class="link__container"><a href="" class="link">Places</a></li>
+            <li class="link__container">
+              <a href="" class="link">Services</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="circulo1"></div>
+    <div class="circulo2"></div>
+    <main>
+      <div class="visit-places">
+        <h2 class="titulo-places">Visit Places</h2>
+        <div class="subtitulos-places">
+          <p class="texto-places">Places</p>
+          <p class="texto-places">|</p>
+          <p class="texto-places favorites">Favorites</p>
+        </div>
+      </div>
+      <div class="ModalInfoPais" id="ModalInfoPais">
+        <h2 class="titulo-modal">Pais</h2>
+        <div class="contenido-modal">
+          <button id="cerrar-modal">X</button>
+          <img
+            class="img-card-modal"
+            src="https://img.freepik.com/foto-gratis/casa-mexicana-colores_23-2151769268.jpg?t=st=1728577048~exp=1728580648~hmac=20c6487b3fca8e990de7362ace7baff1571c062bb4ff2c10b1b2d63f759a9389&w=1380"
+            alt=""
+          />
+          <p class="texto-modal">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+            enim, sunt quo totam, eligendi dolorum similique repudiandae
+            recusandae ad distinctio maxime, praesentium laboriosam iure? Itaque
+            expedita eius assumenda alias provident.
+          </p>
+        </div>
+      </div>
+      <div class="cards" id="ContenedorPirncipalCardsPaises"></div>
+
+      <section class="servicios">
+        <h2 class="servicios__titulo">Services</h2>
+        <article class="servicios__card-1">
+          <div class="card-1__img">
+            <img class="img-card-1" src="./img/hotel.jpg" alt="" />
+          </div>
+          <div class="card-1__texto">
+            <h3 class="card-1__title">Accommodation</h3>
+            <p class="card-1__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+              corrupti mollitia laborum sed iusto perferendis ea ducimus qui
+              tempore necessitatibus quibusdam tempora dolorem ullam dolores,
+              accusantium eos earum nobis dolorum. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Laudantium porro distinctio
+              corporis, nulla debitis fugit. Vitae reiciendis ipsa mollitia
+              quasi, asperiores qui placeat quibusdam possimus cumque id illum
+              ipsam nisi?
+            </p>
+            <button class="cards__btn">Learn More</button>
+          </div>
+        </article>
+        <article class="servicios__card-2">
+          <div class="card-2__texto">
+            <h3 class="card-2__title">Transport</h3>
+            <p class="card-2__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+              corrupti mollitia laborum sed iusto perferendis ea ducimus qui
+              tempore necessitatibus quibusdam tempora dolorem ullam dolores,
+              accusantium eos earum nobis dolorum. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Exercitationem error nulla
+              consectetur. Porro maiores voluptatibus eos officiis facilis,
+              consequatur fuga perferendis quisquam, dignissimos soluta
+              assumenda incidunt possimus deleniti delectus corporis.
+            </p>
+            <button class="cards__btn">Learn More</button>
+          </div>
+          <div class="img__card2">
+            <img
+              class="img-card-2"
+              src="https://img.freepik.com/foto-gratis/taxi-amarillo-calles-ciudad-nueva-york-noche_23-2150820164.jpg?t=st=1728577182~exp=1728580782~hmac=f2d176a5b4f3efc593e975adfdd78f6a2c55cf623c3925ba2ecf2d18bf70ff60&w=1380"
+              alt=""
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul class="links-footer">
+        <li class="links">Home</li>
+        <li class="links">Places</li>
+        <li class="links">Contact</li>
+        <li class="links">Login</li>
+        <li class="links">Register</li>
+      </ul>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
