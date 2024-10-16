@@ -1,0 +1,8 @@
+## Descripción del ejercicio: 📑
+En ```agregar_tareas.html```, el usuario puede agregar nuevas tareas. Estas tareas se guardan en localStorage con un estado de completado (false por defecto).
+
+- Cada vez que se agrega una tarea, esta se almacena en localStorage bajo la clave "tareas", que es un array de objetos.
+- En ```ver_tareas.html```, se recuperan las tareas del localStorage y se muestran en una lista. Los usuarios pueden marcar las tareas como completadas haciendo clic en una casilla de verificación.
+- Cuando una tarea es marcada o desmarcada, el estado de la tarea en localStorage se actualiza, y la interfaz refleja estos cambios (mostrando las tareas completadas con una línea tachada).
+
+**Mucha suerte 👍**
