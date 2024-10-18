@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tareas</title>
+</head>
+<body>
+    <h1>Tareas</h1>
+    
+    <h2>porfavor agregue Tarea</h2>
+    <input type="text" id="nuevaTarea" placeholder="ingresa una nueva tarea">
+    <button onclick="agregarTarea()">Agregar</button>
+    
+    <h2>lista de tareas</h2>
+    <ul id="listaTareas"></ul>
+
+    <script>
+        function agregarTarea() {
+            const nuevaTareaInput = document.querySelector('#nuevaTarea');
+            const tarea = nuevaTareaInput.value.trim();
+            
+            if (tarea) {
+                let tareas = JSON.parse(localStorage.getItem('tareas')) || [];
+                tareas.push({ texto: tarea, completada: false });
+                localStorage.setItem('tareas', JSON.stringify(tareas));
+                nuevaTareaInput.value = '';
+                mostrarTareas();
+            }
+        }
+
+        function mostrarTareas() {
+            const listaTareas = document.querySelector('#listaTareas');
+            listaTareas.innerHTML = '';
+            
+            const tareas = JSON.parse(localStorage.getItem('tareas')) || [];
+            
+            tareas.forEach((tarea, index) => {
+                const li = document.createElement('li');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = tarea.completada;
+                checkbox.onchange = () => actualizarTarea(index);
+                
+                const span = document.createElement('span');
+                span.textContent = tarea.texto;
+                if (tarea.completada) {
+                    span.classList.add('completada');
+                }
+                
+                li.appendChild(checkbox);
+                li.appendChild(span);
+                listaTareas.appendChild(li);
+            });
+        }
+
+        function actualizarTarea(index) {
+            let tareas = JSON.parse(localStorage.getItem('tareas')) || [];
+            tareas[index].completada = !tareas[index].completada;
+            localStorage.setItem('tareas', JSON.stringify(tareas));
+            mostrarTareas();
+        }
+
+        mostrarTareas();
+    </script>
+</body>
+</html>
