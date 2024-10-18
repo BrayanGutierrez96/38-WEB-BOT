@@ -1,0 +1,25 @@
+## Ejercicio 1: Crear una clase Coche 🏎️🚘
+
+**Crea una clase llamada Coche.**
+
+- **El constructor debe recibir tres parámetros:** marca, modelo y año.
+<br/>
+- La clase debe tener un método llamado `describirCoche` que imprima en la consola la información del coche en una frase como: ```"Este coche es un [marca] [modelo] del año [año]."```
+<br/>
+- Crea dos instancias (objetos) de la clase Coche con diferentes valores y usa el método describirCoche para cada una. index.html 
+<hr>
+
+##  Ejercicio 2: Cuenta Bancaria 💵🫰💸💹
+
+**Crea una clase llamada CuentaBancaria.**
+
+El constructor debe recibir los siguientes parámetros: titular (nombre de la persona dueña de la cuenta), saldo (el saldo inicial de la cuenta).
+
+**La clase debe tener los siguientes métodos:**
+
+- **depositar(cantidad):** Este método debe sumar la cantidad indicada al saldo.
+<br/>
+- **retirar(cantidad):** Este método debe restar la cantidad indicada al saldo solo si hay suficiente dinero en la cuenta. Si no hay suficiente, debe mostrar un mensaje diciendo que el saldo es insuficiente.
+<br/>
+- **consultarSaldo():** Este método debe mostrar el saldo actual de la cuenta.
+Crea una instancia de la clase y realiza varias operaciones, como depósitos, retiros y consulta de saldo.
