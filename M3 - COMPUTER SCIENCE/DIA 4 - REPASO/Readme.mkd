@@ -1,0 +1,41 @@
+# Ejercicio de practica Herencia y Objetos no literales 📘
+
+*Desarrolla un sistema que permita gestionar productos físicos y digitales en una tienda en línea utilizando clases y herencia en JavaScript. El sistema debe tener dos tipos de productos principales: productos físicos y productos digitales, cada uno con propiedades y comportamientos específicos, pero que compartan una estructura común heredada de una clase base*
+
+## Clase base: Producto
+
+**Propiedades:**
+
+- **nombre (string)**: Nombre del producto.
+- **precio (número)**: Precio del producto.
+- **categoria (string)**: Categoría a la que pertenece el producto (ej. Ropa, Tecnología, etc.).
+
+**Métodos:**
+- **mostrarDetalles():** Muestra el nombre, el precio y la categoría del producto.
+- **aplicarDescuento(descuento):** Recibe un número que representa un porcentaje de descuento y retorna el precio del producto con el descuento aplicado.
+
+### Clase derivada: ProductoFisico
+
+**Propiedades adicionales:**
+- **peso (número)**:Peso del producto físico en kilogramos
+- **dimensiones (string)**: Dimensiones del producto (ej. "30x20x5 cm").
+
+**Métodos adicionales:**
+- **calcularEnvio()**: Calcula el costo de envío en base al peso del producto, donde cada kilogramo cuesta $5.
+- **mostrarDetalles()**: Sobrescribe el método mostrarDetalles() para incluir peso y dimensiones del producto.
+
+### Clase derivada: ProductoDigital
+
+**Propiedades adicionales:**
+- **tamanioArchivo (número)**: Tamaño del archivo del producto digital en MB.
+
+**Métodos adicionales:**
+- **mostrarTamanioArchivo()**: Muestra el tamaño del archivo del producto digital.
+- **aplicarLicencia(tipoLicencia)**: Recibe un tipo de licencia (ej. "Personal", "Comercial") y retorna un mensaje indicando el tipo de licencia aplicada.
+- **mostrarDetalles()**: Sobrescribe el método mostrarDetalles() para incluir el tamaño del archivo.
+
+**Ejemplo de flujo:**
+
+- **Un producto físico como una "Camiseta Node.js" debe mostrar su precio, categoría, peso y dimensiones, así como el costo de envío y el precio con descuento.**
+
+- **Un producto digital como un "Curso de Node.js" debe mostrar su tamaño en MB, la categoría, y permitir aplicar una licencia y calcular el precio con descuento.**
