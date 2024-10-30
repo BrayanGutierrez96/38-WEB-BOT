@@ -1,0 +1,8 @@
+De la siguiente URL https://rickandmortyapi.com/api/character Extraer el nombre, la especie y la imagen de los primeros 20 personajes en un nuevo arreglo.
+
+**pasos**
+- 1.Copiar la información de la URL y guardarla en una variable.
+- 2.Recorrer la data con el método ```map()``` y retornar la información más relevante en un nuevo arreglo llamado ```personajes```
+- 3.Mostrar en consola la información de cada personaje que incluya solamente: nombre, especie e imagen.
+
+**NOTA:** La información que nos llegue la debemos de guardar como un objeto en el arreglo.

@@ -662,3 +662,15 @@ const data = [
       "created": "2017-11-04T22:34:53.659Z"
     }
   ]
+  const  personajes = data.map ((data)=>{
+    return{Name : data.name,
+           species : data.species,
+           url : data.image
+    }
+    })
+    
+    console.log(personajes);
+
+
+
+export default data
