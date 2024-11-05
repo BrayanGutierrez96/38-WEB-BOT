@@ -57,3 +57,9 @@ function miFuncion(idDelUsuario) {
   }
   return datoEncontrado;
 }
+const total = data
+  .filter((producto) => producto.category === "men's clothing")
+  .map((producto) => producto.price)
+  .reduce((suma, precio) => suma + precio);
+
+console.log(total);
