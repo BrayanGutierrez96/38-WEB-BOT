@@ -1,0 +1,17 @@
+# PROYECTO DEL MODULO - COMPUTER SCIENCE ⚒️📑
+
+
+**OBJETIVOS**
+
+* Entender el funcionamiento de los algoritmos para agregar elementos a una lista
+* Entender el funcionamiento de los algoritmos para eliminar elementos de una lista
+* Entender el funcionamiento de los algoritmos para encontrar un elemento en una lista
+
+## Pasos 👣
+1. En la pagina que se que se trabajo los modulos pasados llamada travel site, en la seccion ```favorites``` debemos de poder hacer click, lo cual me envia a un arreglo con los elementos agregados a la lista de favoritos.
+2. En cada card de cada pais, en el boton de ```add to favorites``` debemos de poder hacer click, lo cual me envia a un arreglo con los elementos agregados a la lista de favoritos.
+3. en la seccion ```favorites``` Debemos de anexar un input para encontrar un pais en la lista de favoritos.
+4. En cada card de cada pais, en la seccion de ```favorites``` debemos agregar un boton en el cual diga ```remove``` y que al hacer clic me elimine el pais de la lista de favoritos.
+
+**NOTA** 📝: No es necesario que al hacer clic se agregue al local storage, solo que se agregue a la lista de favoritos.
+Aunque si lo desea, se puede agregar el pais a la lista de favoritos en el local storage.

@@ -1,0 +1,73 @@
+Crear una pequeña aplicación que gestione una lista de estudiantes con sus calificaciones, permitiéndoles filtrar y procesar datos.
+
+* Descripción del Ejercicio: Crear una clase Estudiante que tenga las propiedades nombre y calificación. Luego, crear una clase Clase que gestione una lista de estudiantes, permitiendo agregar estudiantes, calcular el promedio de calificaciones, encontrar estudiantes con calificaciones sobresalientes (mayores a 85), y devolver una lista de nombres en mayúsculas.
+
+* Paso a Paso:
+Paso 1: Crea la clase Estudiante con un constructor que reciba nombre y calificacion.
+Paso 2: Crea la clase Clase que contenga una propiedad estudiantes (un array vacío al inicio).
+Paso 3: En la clase Clase, define métodos para:
+
+*Agregar estudiantes a la lista (puedes agregar estudiantes manualmente).
+
+*Obtener todos los nombres de estudiantes en mayúsculas usando .map.
+
+*Encontrar los estudiantes con calificaciones mayores a 85 usando .filter.
+
+*Calcular el promedio de calificaciones usando .forEach.
+
+*Buscar un estudiante específico por su nombre usando .find.
+
+
+
+
+
+
+
+class Estudiante {
+    constructor(nombre, calificacion) {
+        this.nombre = nombre;
+        this.calificacion = calificacion;
+    }
+}
+
+
+class Clase {
+    constructor() {
+        this.estudiantes = [];
+    }
+
+    agregarEstudiante(estudiante) {
+        this.estudiantes.push(estudiante);
+    }
+
+    obtenerNombresMayuscula() {
+        return this.estudiantes.map(est => est.nombre.toUpperCase());
+    }
+
+    estudiantesSobresalientes() {
+        return this.estudiantes.filter(est => est.calificacion > 85);
+    }
+
+    calcularPromedio() {
+        let total = 0;
+        this.estudiantes.forEach(est => {
+            total += est.calificacion;
+        });
+        return total / this.estudiantes.length;
+    }
+
+    buscarEstudiante(nombre) {
+        return this.estudiantes.find(est => est.nombre === nombre);
+    }
+}
+
+// Ejemplo de uso
+const clase = new Clase();
+clase.agregarEstudiante(new Estudiante('Ana', 90));
+clase.agregarEstudiante(new Estudiante('Luis', 80));
+clase.agregarEstudiante(new Estudiante('Marta', 88));
+
+console.log('Nombres en mayúsculas:', clase.obtenerNombresMayuscula());
+console.log('Estudiantes sobresalientes:', clase.estudiantesSobresalientes());
+console.log('Promedio de calificaciones:', clase.calcularPromedio());
+console.log('Buscar estudiante Marta:', clase.buscarEstudiante('Marta'))

@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    margin: 30px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.287);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.card__img{
+    width: 80%;
+}
+.card__content{
+    padding: 15px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-size: 1.2em;
+}
+
