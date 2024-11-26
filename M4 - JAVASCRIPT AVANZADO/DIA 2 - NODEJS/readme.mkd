@@ -1,0 +1,60 @@
+EJERCICIO
+
+    Crear una función en Node.js que reciba argumentos desde la terminal
+
+    Objetivo: Aprender a recibir argumentos desde la línea de comandos en un archivo de Node.js.
+
+Paso 1: Crea una nueva carpeta para este ejercicio y navega a ella en la terminal.
+
+Puedes hacer esto escribiendo:
+
+** mkdir ejercicio
+cd ejercicio **
+
+Paso 2: Crea un archivo llamado saludo.js.
+
+Desde la terminal, escribe:
+
+touch saludo.js
+
+Esto creará un archivo vacío llamado saludo.js dentro de la carpeta ejercicio.
+
+Paso 3: Abre saludo.js y escribe el siguiente código:
+
+crea un una funcion saludar que reciba dos parametros: ( nombre, callback)
+
+nombre: un valor de tipo cadena (string), que es el nombre de la persona a saludar.
+callback: una función que se ejecutará después de que se ejecute console.log("Hola, " + nombre).
+debes de poner tambien el callback(); para que se ejecute despues de imprimir el saludo.
+
+despues crea una funcion despedirse que solo imprime ADIOS! en la consola.
+No recibe parámetros y no devuelve ningún valor; simplemente realiza una acción cuando es llamada.
+
+EL resultado final en la consola debe de ser:
+Hola, Nombre
+Adios!
+
+EJERCICIO 2
+
+Crear un script con NPM para ejecutar un archivo automáticamente
+1. Objetivo: Aprender a crear y ejecutar un script de NPM para automatizar tareas en el proyecto.
+2. Instrucciones:
+* Crea una nueva carpeta para este ejercicio y navega a ella en la terminal.
+* Inicializa un proyecto de Node.js ejecutando:
+npm init -y
+
+* Esto creará un archivo package.json en la carpeta.
+* Crea un archivo mensaje.js y escribe el siguiente código:
+
+console.log("¡Este es un mensaje ejecutado desde un script de NPM!");
+
+Abre el archivo package.json y busca la sección "scripts". Modifícala para que se vea así:
+
+"scripts": {
+  "mensaje": "node mensaje.js"
+}
+
+* Guarda el archivo package.json.
+* En la terminal, ejecuta el siguiente comando para correr el scriptnpm run mensaje.
+* 
+* En la consola deberá aparecer, ¡Este es un mensaje ejecutado desde un script de NPM!.

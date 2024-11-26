@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio2",
+  "version": "1.0.0",
+  "main": "ejercicio2.js",
+ "scripts": {
+  "mensaje": "node mensaje.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

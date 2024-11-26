@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "name": "dia-2---nodejs",
+  "version": "1.0.0",
+  "main": "colores.js",
+  "scripts": {
+    "start": "node colores.js",
+    "dev": "node --watch colores.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

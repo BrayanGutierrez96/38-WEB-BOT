@@ -1,0 +1,1 @@
+console.log("¡Este es un mensaje ejecutado desde un script de NPM!");
