@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Este es un proyecto para la clase de DEVF",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "nodemon src/main.js"
+  },
+  "author": "DEVF",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.8",
+    "d3-time": "^3.1.0"
+  },
+  "devDependencies": {
+    "chalk": "^5.2.0",
+    "nodemon": "^3.1.7"
+  }
+}
