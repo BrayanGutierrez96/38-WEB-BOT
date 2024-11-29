@@ -1,0 +1,13 @@
+{
+  "name": "dia-4---axios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node src/fetch.js",
+    "dev":"node --watch src/fetch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

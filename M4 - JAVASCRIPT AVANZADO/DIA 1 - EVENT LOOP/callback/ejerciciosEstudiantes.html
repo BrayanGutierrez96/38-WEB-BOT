@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicio</h1>
+    <script>
+      const registrarUsuario = function (usuario, callback) {
+        if (!usuario.nombre || !usuario.correo) {
+          callback("Error: nombre y correo son obligatorios");
+        } else {
+          callback(null, "Registro exitoso");
+        }
+      };
+      const usuario = {
+        nombre: "",
+        correo: "brayan@example.com",
+      };
+      registrarUsuario(usuario, function (error, mensaje) {
+        if (error) {
+          alert("error");
+        } else {
+          alert(mensaje);
+        }
+      });
+    </script>
+  </body>
+</html>
