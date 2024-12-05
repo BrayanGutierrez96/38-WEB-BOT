@@ -37,3 +37,7 @@ async function crearUnicornio() {
 
 // crearUnicornio()
 obtenerUnicornios()
+fetch(URL).then((res)=>{
+    return res.json()}).then(()=>{
+        console.log(res.body);
+    })
