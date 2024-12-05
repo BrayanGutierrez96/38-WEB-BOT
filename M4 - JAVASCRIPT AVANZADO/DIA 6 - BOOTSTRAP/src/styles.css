@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.button{
+    margin: auto;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
