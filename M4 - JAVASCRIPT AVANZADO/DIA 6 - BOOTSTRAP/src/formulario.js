@@ -3,28 +3,37 @@ const URL = "https://example-unicorns-api.vercel.app/unicornios";
 const inputNombre = document.querySelector("#nombre");
 const inputPoder = document.querySelector("#poder");
 const inputImagen = document.querySelector("#imagen");
-let nombre = "";
-let poder = "";
-let imagen = "";
 
-inputNombre.addEventListener("change", () => {
-  nombre = inputNombre.value;
+let data = {
+  name: "",
+  power: "",
+  img: "",
+};
+function obtenerDatos(evento) {
+  const eventoNombre = evento.target.name;
+  const eventoValue = evento.target.value
+
+  const newData = {...data, [eventoNombre] : eventoValue }
+  data = newData
+  console.log(newData);
+}
+inputNombre.addEventListener("change", (evento) => {
+  obtenerDatos(evento);
 });
-inputPoder.addEventListener("change", () => {
-  poder = inputPoder.value;
+inputPoder.addEventListener("change", (evento) => {
+  obtenerDatos(evento);
 });
-inputImagen.addEventListener("change", () => {
-  imagen = inputImagen.value;
+inputImagen.addEventListener("change", (evento) => {
+  obtenerDatos(evento);
 });
 
 btnEnviar.addEventListener("click", (event) => {
   event.preventDefault();
-  const data = { name: nombre, img: imagen, power: poder };
-  fetch(URL, {
-    method: "POST",
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  }).then((res) => {
-    return;
-  });
+    fetch(URL, {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      return;
+    });
 });
