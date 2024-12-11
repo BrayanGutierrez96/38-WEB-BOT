@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.enlace-btn{
+    text-decoration: none;
+    text-align: center  ;
+    margin: auto;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.enlace-btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.botones{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+button{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+}
+#btn-eliminar{
+    background-color: rgb(138, 134, 147);
+}
+#btn-actualizar{
+    background-color: rgb(26, 26, 141);
+}
+#btn-eliminar:hover, #btn-actualizar:hover, button:hover{
+    background-color: black;
+    color: white;
+}

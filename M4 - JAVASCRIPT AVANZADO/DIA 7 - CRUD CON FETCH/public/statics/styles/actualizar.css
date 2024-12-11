@@ -1,0 +1,15 @@
+#contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+img{
+    width: 400px;
+}
+.formulario{
+    justify-content: center;
+    margin-top: 0;
+    
+}

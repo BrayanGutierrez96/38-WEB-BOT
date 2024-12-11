@@ -1,0 +1,11 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
+}
+#enviar{
+    width: 200px;
+    margin: auto;
+}
